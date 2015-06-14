@@ -3,10 +3,9 @@ McMahon Lab Git Workshop
 
 ------------------
 
-This repository contains the course material from the Software
-Carpentry workshop hosted by UW-Madison's
-[Advanced Computing Initiative (ACI)](https://aci.wisc.edu) for researchers in the Social Sciences
-at the UW-Madison.
+This repository contains the course material derived from the Software
+Carpentry workshops hosted by UW-Madison's
+[Advanced Computing Initiative (ACI)](https://aci.wisc.edu).
 
 It was modified by Sarah Stevens for the purpose of teaching Git/GitHub to members of the McMahon Lab.
 
