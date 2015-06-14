@@ -37,7 +37,7 @@ After installing Git Bash:
 
 `nano` is the editor installed by the Software Carpentry Installer.
 It is a basic editor integrated into the lesson material.
-You can also install [Atom](https://atom.io/), if you prefer.
+You can also install [Atom](https://atom.io/) in addition if you would like.
 
 ---
 
@@ -45,11 +45,11 @@ You can also install [Atom](https://atom.io/), if you prefer.
 
 #### Editor
 
+We will be using `nano` which is pre-installed.  But you are welcome to use your
+text editor of choice.
 We recommend
 [Text Wrangler](http://www.barebones.com/products/textwrangler/) or
 [Atom](https://atom.io/).
-You can also use `nano`,
-which should be pre-installed.
 
 #### Git
 
