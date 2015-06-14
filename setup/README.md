@@ -1,10 +1,11 @@
 ## Setup
 
-This setup was customized by Sarah Stevens to only install Git
-and a text editor.  Sarah uses [Atom](https://atom.io/) and
+This setup will help you install git and a text editor.
+
+Sarah uses [Atom](https://atom.io/) and
 [Text Wrangler](http://www.barebones.com/products/textwrangler/)
 but you are welcome to use your own text editor of choice.
-However, if you don't use a command line editor, please check
+However, *if you don't use a command line editor*, please check
 that you have nano installed, or follow install instructions below
 for your particular operating system.
 
