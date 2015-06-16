@@ -74,3 +74,10 @@ to install it via your distribution's package manager
 [Kate](http://kate-editor.org/) or [Atom](https://atom.io/) are options for Linux users.  
 You can also use `nano`,
 which should be pre-installed.
+
+---
+### Optional: GitHub Desktop App
+
+If you prefer to work with a graphical interface instead of the command line, GitHub provides an alternative to Git. Their desktop client provides support for most command-line Git operations as well as access to the online features of GitHub. Download it here:  
+[Windows](https://windows.github.com/)  
+[Mac](https://mac.github.com/)
