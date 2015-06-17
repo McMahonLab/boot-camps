@@ -312,10 +312,10 @@ called `stats.py`, a program to implement stats functions on a dataset.
     $ nano stats.py
 
 Then add a line to the stats file.  Something like `# mean function`, a pretend
-placeholder for a mean function we have already written.
+placeholder for a mean function we _have already written_.
 
 Next let's switch to a new branch to work on our median function, while leaving
-the current stats.py unaltered.
+the master stats.py unaltered.
 
 ### ![Exercise](pics/exercise.jpg) Exercise: Switch to a new branch
 
@@ -329,13 +329,11 @@ How can you tell we've switched between branches? When we used the
 branch command before there was an asterisk next to the master branch.
 The asterisk indicates which branch you are currently in.
 
-### ![Exercise](pics/exercise.jpg) Exercise: Implement the `median()` function.
+### ![Exercise](pics/exercise.jpg) Exercise: Implement the `median` function.
 
-1. Use the list's `sort()` method to implement the `median()` function. (The
-median is either the middle value of an odd set of numbers *or* the `mean()` of
-the middle two values of an even set of numbers.)
+**Step 1.**:  Use nano to add in a placeholder `# median function`
 
-2. Commit the changed file to your repository.
+**Step 2.**: Add and commit your changes
 
 ## `git merge`: Merging Branches
 
