@@ -329,22 +329,6 @@ How can you tell we've switched between branches? When we used the
 branch command before there was an asterisk next to the master branch.
 The asterisk indicates which branch you are currently in.
 
-### ![Exercise](pics/exercise.jpg) Exercise: Copy files into your repository
-
-Let's make sure we have a good copy of `stats.py`.
-
-```
-$ cd ~/simplestats
-$ cp ~/boot-camps/python/testing/stats.py .
-```
-
-Now let's add it to our repository, but in the current branch.
-
-```
-$ git add stats.py
-$ git commit -m "Adding a first version of stats.py."
-```
-
 ### ![Exercise](pics/exercise.jpg) Exercise: Implement the `median()` function.
 
 1. Use the list's `sort()` method to implement the `median()` function. (The
