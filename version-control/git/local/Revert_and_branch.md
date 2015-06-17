@@ -39,7 +39,7 @@ directory. Here are the basic commands, discussed
 ## Don't include _everything_ in the repository: the `.gitignore` file.
 
 You probably don't want to include _every_ file in your project
-directory as part of your git repository.
+directory as part of your git repository.  For example, your large metagenomes fastq's.
 
 - Backup files automatically created by your editor (`*.bak` or `*~`)
 - Very large primary data files that don't change
