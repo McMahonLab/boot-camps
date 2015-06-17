@@ -70,6 +70,9 @@ Let's do some work in a branch.
     $ git branch report
     $ git checkout report
 
+Pro-tip:  You could also create a branch and check it out with one command `git checkout -b report`.
+
+
 Go ahead an add a file and commit it.
 
     $ touch report.tex
