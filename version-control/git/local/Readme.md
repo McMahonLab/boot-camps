@@ -1,4 +1,4 @@
-[Up To Schedule](../../../README.md#schedule) - Back To [Write Code for People](../../../python/best_practice/Readme.md) - Forward to [Don't Repeat Yourself](../../../python/best_practice/dont_repeat_yourself.md)
+[Up To Schedule](../../../README.md#schedule) - Forward to [Make Incremental Changes II](Revert_and_branch.md)
 
 ----
 
@@ -76,7 +76,7 @@ Day-to-day, the basic use of git is the following:
 - Indicate what changes to save, with `git add`.
 - Commit to those changes, with `git commit`.
 
-## Check the status of your repository: `git status` 
+## Check the status of your repository: `git status`
 
 Use `git status` to check the current status of things in your repository
 
@@ -181,7 +181,7 @@ explanation if necessary.
 ## Viewing the differences: `git diff`
 
 `git diff` is similiar to the shell command `diff`, but rather than
-comparing two files, it is used to show the historical changes in a 
+comparing two files, it is used to show the historical changes in a
 repository.
 
 If you type `git diff` alone, it will show all changes in your working
@@ -276,4 +276,4 @@ There are some useful flags for this command, such as
 
 ----
 
-[Up To Schedule](../../../README.md#schedule) - Back To [Write Code for People](../../../python/best_practice/Readme.md) - Forward to [Don't Repeat Yourself](../../../python/best_practice/dont_repeat_yourself.md)
+[Up To Schedule](../../../README.md#schedule) - Forward to [Make Incremental Changes II](Revert_and_branch.md)
