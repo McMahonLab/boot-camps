@@ -156,7 +156,9 @@ $ git diff
 ```
 
 We can use `git checkout` not only to switch to the latest version
-of a file, but any version that we have committed.  
+of a file, but any version that we have committed.
+In this case, since we also didn't commit our deletion, it was
+not even added to the history and that version of our file would have been lost.
 
 ### ![Exercise](pics/exercise.jpg) Exercise: Practice using `git checkout`
 
