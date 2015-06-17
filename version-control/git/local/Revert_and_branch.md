@@ -75,6 +75,8 @@ If you include a directory name, all files in that directory will be ignored.
 
 If you want to remove a file from your repository, use `git rm`.
 Note that past versions of the file will remain in the repository history.
+By using `git rm`, git will stage the removal of your file to be committed.
+Otherwise it can be a bit tricky to `git add` a removed file.
 
 ### ![Exercise](pics/exercise.jpg) Exercise: Practice using `git rm`
 
