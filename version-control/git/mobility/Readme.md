@@ -15,7 +15,7 @@ activities).
 The workflow in this section describes three repository locations - a server, a
 work computer, and a home (laptop) computer. The server will host the "base"
 repository, and the server can live anywhere you have a connection to. For
-example, you could use your GitHub repository (described in the 
+example, you could use your GitHub repository (described in the
 [Make Changes from Anywhere (GitHub)](../github/Readme.md) section) as the server. If
 you have access to a server on campus (e.g., server.uni.edu), you can host your
 repository there (and it's private!).
@@ -33,6 +33,11 @@ report to it. You've heard about [Latex](http://www.latex-project.org/) and that
 it works really well with version control systems, so you wanted to try it
 out. You're spending your time writing, so you'd like to be able to move between
 work, some coffee shops, and home.
+
+Aside:  Markdown (what this document was written in) also works very well with
+version control software and is easier to read/learn than Latex.  Sarah is
+moving to writing all of her documentation in Markdown.  Ask her for some examples
+and talk to her about it if you are interested.
 
 Let's start by making a laptop and work directory.
 
