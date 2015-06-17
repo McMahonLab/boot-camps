@@ -351,60 +351,6 @@ $ git merge add_median
 Note: We had to checkout the master before merging, because you must be in
 the branch you are merging to.
 
-## Aside: Make your Prompt Pretty
-
-In the next section, we'll get into the gritty details of remotes and branches
-as we head toward web-based storage of your repositories. It turns out that some
-folks have created a way to make this kind of navigation more convenient,
-showing you what branch you're on using your bash prompt. Some super nice
-properties also include color-coding when you've got changed files or when your
-branch is fresh.
-
-### ![Exercise](pics/exercise.jpg) Exercise: Update your prompt
-
-**Step 1**: Copy the following lines into your `~/.bashrc` file, or
-`~/.bash_profile` in Mac OS X (taken from a
-combination of [two](http://stackoverflow.com/a/6086978)
-[sources](https://gist.github.com/woods/31967)).
-
-```
-function color_my_prompt {
-    local __user_and_host="\[\033[01;32m\]\u@\h"
-    local __cur_location="\[\033[01;34m\]\w"
-    local __git_branch='`git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`'
-    local __prompt_tail="\[\033[35m\]$"
-    local __last_color="\[\033[00m\]"
-
-    RED="\[\033[0;31m\]"
-    YELLOW="\[\033[0;33m\]"
-    GREEN="\[\033[0;32m\]"
-
-    # Capture the output of the "git status" command.
-    git_status="$(git status 2> /dev/null)"
-
-    # Set color based on clean/staged/dirty.
-    if [[ ${git_status} =~ "working directory clean" ]]; then
-        state="${GREEN}"
-    elif [[ ${git_status} =~ "Changes to be committed" ]]; then
-        state="${YELLOW}"
-    else
-        state="${RED}"
-    fi
-
-    export PS1="$__user_and_host $__cur_location ${state}$__git_branch$__prompt_tail$__last_color "
-}
-
-# Tell bash to execute this function just before displaying its prompt.
-PROMPT_COMMAND=color_my_prompt
-```
-
-**Step 2**: Source your `.bashrc` file.
-(Use `~/.bash_profile` instead of `~/.bashrc` in Mac OS X)
-
-    $ source ~/.bashrc
-
-**Step 3**: Play around with it.
-
 ## Resources
 
 * [git book](http://git-scm.com/book)
