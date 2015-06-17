@@ -83,7 +83,7 @@ Or if you'd like to keep it around
     $ mv simplestats old-simplestats
 
 Step 1 : Go to our
-[repository](https://github.com/UW-Madison-ACI/simplestats)
+[repository](https://github.com/McMahonLab/simplestats)
 from your browser, and click on the Fork button. Choose to fork it to your
 user name rather than any organizations.
 
@@ -104,8 +104,8 @@ Step 3 : Add a connection to the common repository :
     $ git remote -v
     origin  https://github.com/YOU/simplestats (fetch)
     origin  https://github.com/YOU/simplestats (push)
-    upstream        https://github.com/UW-Madison-ACI/simplestats (fetch)
-    upstream        https://github.com/UW-Madison-ACI/simplestats (push)
+    upstream        https://github.com/McMahonLab/simplestats (fetch)
+    upstream        https://github.com/McMahonLab/simplestats (push)
 
 ### Remote Naming Conventions
 
