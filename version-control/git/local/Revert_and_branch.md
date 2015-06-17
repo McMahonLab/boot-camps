@@ -306,6 +306,17 @@ To delete a branch, use the `-d` flag.
 We had previously used `git checkout` to abandon local changes. It is
 also used to switch between branches.
 
+First lets make a file to work on.  Let's imagine we are working on a program
+called `stats.py`, a program to implement stats functions on a dataset.
+
+    $ nano stats.py
+
+Then add a line to the stats file.  Something like `# mean function`, a pretend
+placeholder for a mean function we have already written.
+
+Next let's switch to a new branch to work on our median function, while leaving
+the current stats.py unaltered.
+
 ### ![Exercise](pics/exercise.jpg) Exercise: Switch to a new branch
 
 Create an `add_median` branch and switch to it.
