@@ -15,7 +15,7 @@ code repositories. It provides tools for browsing, collaborating on and
 documenting code. Your home institution may have a repository hosting
 system of it's own. To find out, ask your system administrator.  GitHub,
 much like other forge hosting services ([launchpad](https://launchpad.net),
-[bitbucket](https://bitbucket.org), [sourceforge](http://sourceforge.net), 
+[bitbucket](https://bitbucket.org), [sourceforge](http://sourceforge.net),
 etc.) provides :
 
 -   landing page support
@@ -72,7 +72,10 @@ We'll be interacting with remote repositories now, so let's clean up the
 simplestats folder on your machine.
 
     $ cd
-    $ rm -r simplestats
+    $ rm -rf simplestats
+
+**BE CAREFUL with rm -rf.** We are __only__ using it because git repos are write
+protected and can't be deleted easily with out it.
 
 Or if you'd like to keep it around
 
