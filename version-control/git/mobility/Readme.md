@@ -47,7 +47,7 @@ Let's start by making a laptop and work directory.
 
 ### Setting Up the "Work" Repository
 
-Let's clone it on our "work computer". You'll find the repository is named
+Let's clone our simplestats repo to our "work computer". You'll find the repository is named
 properly.
 
     $ cd ~/work
