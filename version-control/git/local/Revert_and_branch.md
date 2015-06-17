@@ -277,7 +277,8 @@ git log
 Branches are parallel instances of a repository that can be edited and
 version-controlled in parallel. They are useful for experimenting with
 different ideas, for maintaining a stable core while testing
-developing new features.
+developing new features.  Branches become especially important when you
+collaborate with others.
 
 Without an argument, `git branch` lists the branches that
 exist in your repository.
