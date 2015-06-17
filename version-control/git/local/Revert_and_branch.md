@@ -1,4 +1,4 @@
-[Up To Schedule](../../../README.md#schedule) - Back To [Don't Repeat Yourself](../../../python/best_practice/dont_repeat_yourself.md)  - Forward To [Plan for Mistakes](../../../python/testing/Readme.md)
+[Up To Schedule](../../../README.md#schedule) - Back To [Make Incremental Changes I](Readme.md)  - Forward To [Make Changes from Anywhere (Github)](../../../version-control/git/github/Readme.md)
 
 ----
 
@@ -19,16 +19,16 @@ directory. Here are the basic commands, discussed
 
 - `git add`: Add a new file to the repository, or stage the changes
   to a file.
-  
+
 - `git commit`: Commit the changes (adding, modifying, or removing
   files).
-  
+
 - `git diff`: Study the changes.
 
 - `git log`: Summarize the history of changes.
 
 ### ![Exercise](pics/exercise.jpg) Exercise: Refresh your understanding of git
- 
+
 **Step 1**: Go back to your `~/simplestats` repository. Make a change to the
 `README.md` file, or create a new file.  
 
@@ -117,7 +117,7 @@ What happens if you delete a file in the shell without `git rm`? Try deleting
 $ rm README.md
 ```
 
-What does `git status` say?  Luckily our next section is about 
+What does `git status` say?  Luckily our next section is about
 recovering lost files.  
 
 > Note that, just as you should use `git rm` rather than `rm` for
@@ -134,7 +134,7 @@ checkout`.
 
 **Step 1**: Check the status of the repository, and look at your
   unstaged changes (in this case, deletion).
-  
+
 ```
 $ git status
 $ git diff
@@ -153,18 +153,18 @@ $ git status
 $ git diff
 ```
 
-We can use `git checkout` not only to switch to the latest version 
+We can use `git checkout` not only to switch to the latest version
 of a file, but any version that we have committed.  
 
 ### ![Exercise](pics/exercise.jpg) Exercise: Practice using `git checkout`
 
 **Step 1**: Find the commit where you added the "READYOU.md" file
-  
+
 ```
 $ git log
 ```
 
-**Step 2**: Using the first few characters of the appropriate commit value, 
+**Step 2**: Using the first few characters of the appropriate commit value,
 recover the original "READYOU.md" file.  
 
 ```
@@ -257,7 +257,7 @@ $ git log
 git revert <commit>
 ```
 
-`revert` will open our text editor to write a commit message.  You can 
+`revert` will open our text editor to write a commit message.  You can
 change the default message or just save it as is.  
 
 ## `git branch`: Listing, Creating, and Deleting Branches
@@ -370,10 +370,10 @@ function color_my_prompt {
     YELLOW="\[\033[0;33m\]"
     GREEN="\[\033[0;32m\]"
 
-    # Capture the output of the "git status" command.                                                                                               
+    # Capture the output of the "git status" command.
     git_status="$(git status 2> /dev/null)"
 
-    # Set color based on clean/staged/dirty.                                                                                                           
+    # Set color based on clean/staged/dirty.
     if [[ ${git_status} =~ "working directory clean" ]]; then
         state="${GREEN}"
     elif [[ ${git_status} =~ "Changes to be committed" ]]; then
@@ -385,7 +385,7 @@ function color_my_prompt {
     export PS1="$__user_and_host $__cur_location ${state}$__git_branch$__prompt_tail$__last_color "
 }
 
-# Tell bash to execute this function just before displaying its prompt.                                                                              
+# Tell bash to execute this function just before displaying its prompt.
 PROMPT_COMMAND=color_my_prompt
 ```
 
@@ -406,4 +406,4 @@ PROMPT_COMMAND=color_my_prompt
 
 ----
 
-[Up To Schedule](../../../README.md#schedule) - Back To [Don't Repeat Yourself](../../../python/best_practice/dont_repeat_yourself.md)  - Forward To [Plan for Mistakes](../../../python/testing/Readme.md)
+[Up To Schedule](../../../README.md#schedule) - Back To [Make Incremental Changes I](Readme.md)  - Forward To [Make Changes from Anywhere (Github)](../../../version-control/git/github/Readme.md)
