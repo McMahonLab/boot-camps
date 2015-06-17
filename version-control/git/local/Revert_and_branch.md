@@ -348,6 +348,9 @@ $ git checkout master
 $ git merge add_median
 ```
 
+Note: We had to checkout the master before merging, because you must be in
+the branch you are merging to.
+
 ## Aside: Make your Prompt Pretty
 
 In the next section, we'll get into the gritty details of remotes and branches
