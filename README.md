@@ -26,7 +26,7 @@ have been chosen to correspond
 with some of the most important practices to start early in the research process.
 Please note that this schedule is subject to minor changes by the start of the workshop.
 
-Day 1 (Wed. June 24th, 1-3 pm)
+Day 1 (Wed. June 24th, 1-3 pm in MSB 5503)
 =======
 
 | Time         | Topic                                   |
@@ -36,7 +36,7 @@ Day 1 (Wed. June 24th, 1-3 pm)
 | 2:15-2:30   | Break                                    |
 | 2:30-3:00    | [Make Incremental Changes II](version-control/git/local/Revert_and_branch.md) |
 
-Day 2 (Mon. July 6th, 2-4pm)
+Day 2 (Mon. July 6th, 2-4pm in MSB 6201)
 =======
 
 | Time         | Topic                                   |
