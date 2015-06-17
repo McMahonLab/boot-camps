@@ -158,7 +158,7 @@ $ git diff
 We can use `git checkout` not only to switch to the latest version
 of a file, but any version that we have committed.
 In this case, since we also didn't commit our deletion, it was
-not even added to the history and that version of our file would have been lost.
+not even added to the history and that version of our file would be lost.
 
 ### ![Exercise](pics/exercise.jpg) Exercise: Practice using `git checkout`
 
@@ -220,7 +220,7 @@ Before going on, let's re-add our `README.md` file and commit it, along
 with the `READYOU.md` file.  
 
 ```
-$ git add README.md
+$ git add README.md READYOU.md
 $ git commit -m "adding README changes, re-introducing READYOU"
 ```
 
@@ -263,6 +263,14 @@ git revert <commit>
 
 `revert` will open our text editor to write a commit message.  You can
 change the default message or just save it as is.  
+
+**Step 3**: Check your changes.
+
+```
+git status
+ls
+git log
+```
 
 ## `git branch`: Listing, Creating, and Deleting Branches
 
