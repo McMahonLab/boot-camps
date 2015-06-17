@@ -42,7 +42,7 @@ You probably don't want to include _every_ file in your project
 directory as part of your git repository.
 
 - Backup files automatically created by your editor (`*.bak` or `*~`)
-- Very large primary data files that don't change.  For example, your large metagenomes fastq's.
+- Very large primary data files that don't change.  (.fastq, .fasta, .aln)
 - Compiled code (`*.pyc`, `*.o`, `*.so`, `*.exe`)
 - Files that are derived from your code (for example,
   figures/graphs/images)
