@@ -1,5 +1,5 @@
 [Up To Schedule](../../../README.md#schedule) - Back To
-[Plan for Mistakes](../../../python/testing/Readme.md) - Forward To
+[Make Incremental Changes II](../../../version-control/local/Revert_and_branch.md) - Forward To
 [Mobility: Using Version Control at Work and Home](../mobility/Readme.md)
 
 # Make Changes from Anywhere (Github)
@@ -14,12 +14,11 @@ GitHub is a site where many people store their open (and closed) source
 code repositories. It provides tools for browsing, collaborating on and
 documenting code. Your home institution may have a repository hosting
 system of it's own. To find out, ask your system administrator.  GitHub,
-much like other forge hosting services ([launchpad](https://launchpad.net), 
-[bitbucket](https://bitbucket.org),
-[googlecode](http://code.google.com), [sourceforge](http://sourceforge.net)
+much like other forge hosting services ([launchpad](https://launchpad.net),
+[bitbucket](https://bitbucket.org), [sourceforge](http://sourceforge.net), 
 etc.) provides :
 
--   landing page support 
+-   landing page support
 -   wiki support
 -   network graphs and time histories of commits
 -   code browser with syntax highlighting
@@ -34,7 +33,7 @@ to share (in the most liberal sense) your stuff with the world, you can make a
 private repo.  While that often costs money on Github, they now
 have [education discounts](https://github.com/blog/1775-github-goes-to-school).
 
-## GitHub password 
+## GitHub password
 
 Setting up GitHub requires a GitHub user name and password.  Please take a
 moment to [create a free GitHub account](https://github.com/signup/free) (if
@@ -163,7 +162,7 @@ The **git push** command pushes commits in a local working copy to a
 remote repository. The syntax is git push [remote] [local branch].
 Before pushing, a developer should always pull (or fetch + merge), so
 that there is an opportunity to resolve conflicts before pushing to the
-remote. 
+remote.
 
 ## Exercise: Update your remote to an upstream change
 
@@ -171,7 +170,7 @@ Assume that your lab group collectively works on a project (like `simplestats`),
 and someone has updated the `master` branch (we can simulate that by a helper
 doing an update -- helpers?).
 
-It is now your job to: 
+It is now your job to:
 
 * get the upstream changes
 * check what files have changed and how
