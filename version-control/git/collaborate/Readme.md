@@ -150,7 +150,7 @@ def median(vals):
 
 **Step 4** : Issue a Pull Request
 
-  - Go to your remote's page (github.com/beta/simplestats)
+  - Go to your remote's page (github.com/alpha/simplestats)
   - Click Pull Requests (on the right menu) -> New Pull Request -> Edit
   - choose the base fork as **beta/simplestats**, the base as **median**, the
     head fork as **alpha/simplestats**, and the compare as **median**
