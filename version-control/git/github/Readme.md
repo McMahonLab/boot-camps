@@ -183,5 +183,5 @@ It is now your job to:
 ----
 
 [Up To Schedule](../../../README.md#schedule) - Back To
-[Make Incremental Changes II](../../../version-control/local/Revert_and_branch.md) - Forward To
+[Make Incremental Changes II](../local/Revert_and_branch.md) - Forward To
 [Mobility: Using Version Control at Work and Home](../mobility/Readme.md)
