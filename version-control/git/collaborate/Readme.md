@@ -10,14 +10,14 @@ This section will outline an exercise to get your feet wet in using some of
 GitHub's features. We'll be continuing our work on testing as an example.
 
 For the rest of this section, I'll assume that there are two collaborators,
-Alpha and Beta. 
+Alpha and Beta.
 
 Let's start off by relocating back to the original simplestats repository.
 
     $ cd ~/simplestats
 
 To put this in more realistic terms, imagine that the upstream repository
-(UW-Madison-ACI) is managed by your PI and the alpha and beta forks are students
+(McMahonLab) is managed by your PI and the alpha and beta forks are students
 working on a project, tasked with implementing some stats functions. Like good
 SWC followers, we'll be working in a branch, called `median`, which I will now
 create. Once I have, update your local copies and remotes:
@@ -28,13 +28,13 @@ create. Once I have, update your local copies and remotes:
 
 ### Exercise : Get set up
 
-**Step 1** : Group up in pairs and decide who will be "Alpha" and who will 
+**Step 1** : Group up in pairs and decide who will be "Alpha" and who will
 be "Beta" for this exercise.  
 
-**Step 2** : Each of you should add your partner's `simplestats` repository 
-on GitHub as a remote and check 
-to make sure you're connected.  To add your partner's repository, use the 
-following command: 
+**Step 2** : Each of you should add your partner's `simplestats` repository
+on GitHub as a remote and check
+to make sure you're connected.  To add your partner's repository, use the
+following command:
 
     $ git remote add <partner> https://github.com/<partner>/simplestats
 
@@ -52,7 +52,7 @@ To check that it worked, run:
 
 Again, substitute your partner's GitHub username for `<partner>`.  
 
-## Pull Requests : Sending Your Collaborators an Update 
+## Pull Requests : Sending Your Collaborators an Update
 
 From GitHub's [website](https://help.github.com/articles/using-pull-requests), a
 pull request
@@ -63,10 +63,10 @@ discuss potential modifications, and even push follow-up commits if necessary.
 
 ### Exercise : Issue a Pull Request and Review it
 
-In this exercise, "Beta" will be making changes and submitting a pull request 
-to Alpha's repository, and "Alpha" will be reviewing the pull request and merging 
+In this exercise, "Beta" will be making changes and submitting a pull request
+to Alpha's repository, and "Alpha" will be reviewing the pull request and merging
 it into their own remote (and then local) repository.  In the following instructions
-Beta will be performing Steps 1-4 (while Alpha waits and observes), and then 
+Beta will be performing Steps 1-4 (while Alpha waits and observes), and then
 Alpha will continue with Steps 5-7 (while Beta observes).  
 
 #### For Beta (submitting the pull request)
@@ -80,8 +80,6 @@ def median(vals):
     index = z / 2
     if z % 2 == 0:
        return mean([vals[index], vals[index - 1]])
-    else:
-       return vals[index]
 ```
 
 **Step 2** : Commit your changes
@@ -97,7 +95,7 @@ def median(vals):
 
   - Go to your remote's page (github.com/beta/simplestats)
   - Click Pull Requests (on the right menu) -> New Pull Request -> Edit
-  - choose the base fork as **alpha/simplestats**, the base branch as **median**, the 
+  - choose the base fork as **alpha/simplestats**, the base branch as **median**, the
     head fork as **beta/simplestats**, and the compare branch as **median**
   - write a descriptive message and send it off.
 
@@ -105,8 +103,8 @@ def median(vals):
 
 **Step 5** : Review the pull request
 
-  - Is the code clear? Does it need comments? Is it correct? Does something 
-    need clarifying? Feel free to provide in-line comments. Beta can always 
+  - Is the code clear? Does it need comments? Is it correct? Does something
+    need clarifying? Feel free to provide in-line comments. Beta can always
     update their version of commits during a pull request.
 
 **Step 6** : Merge the pull request using the merge button
@@ -114,7 +112,7 @@ def median(vals):
 **Step 7** : Update your local repository.  At this point, all the changes exist
 **only** on the remote repository.
 
-    $ git checkout median 
+    $ git checkout median
     $ git fetch origin
     $ git merge origin/median
 
@@ -122,19 +120,29 @@ def median(vals):
 
 Ok, so we've successfully issued a pull request and merged the updated code
 base. Let's swap the roles of pull requester and reviewer. This time, Alpha will
-add some tests to the median function, submit a pull request and Beta will 
-review the pull request.  Alpha will follow steps 1-4, and Beta will wait 
+add some additional code to the median function, submit a pull request and Beta will
+review the pull request.  Alpha will follow steps 1-4, and Beta will wait
 until they finish, then follow steps 5-7.  
 
 ####For Alpha (submitting the pull request):
 
-**Step 1** : Modify the test_stats.py module to add tests for the median
-function.
+**Step 1** : Modify the stats.py median function to so the code is the following.
+
+```python
+def median(vals):
+    vals.sort()
+    z = len(vals)
+    index = z / 2
+    if z % 2 == 0:
+       return mean([vals[index], vals[index - 1]])
+    else:
+       return vals[index]
+```
 
 **Step 2** : Commit your changes
 
-    $ git add test_stats.py
-    $ git commit -m "I added tests to the median function."
+    $ git add stats.py
+    $ git commit -m "I added else statment to the median function."
 
 **Step 3** : Update your remote
 
@@ -144,7 +152,7 @@ function.
 
   - Go to your remote's page (github.com/beta/simplestats)
   - Click Pull Requests (on the right menu) -> New Pull Request -> Edit
-  - choose the base fork as **beta/simplestats**, the base as **median**, the 
+  - choose the base fork as **beta/simplestats**, the base as **median**, the
     head fork as **alpha/simplestats**, and the compare as **median**
   - write a descriptive message and send it off.
 
@@ -152,8 +160,8 @@ function.
 
 **Step 5** : Review the pull request
 
-  - Is the code clear? Does it need comments? Is it correct? Does something 
-    need clarifying? Feel free to provide in-line comments. Alpha can always 
+  - Is the code clear? Does it need comments? Is it correct? Does something
+    need clarifying? Feel free to provide in-line comments. Alpha can always
     update their version of commits during a pull request.
 
 **Step 6** : Merge the pull request using the merge button
@@ -170,7 +178,7 @@ This is the trickiest part of version control, so let's take it very carefully.
 
 Alpha and Beta have made changes to that file in sync with each other. What
 happens if the PI (upstream) also makes changes on the same lines? A dreaded
-conflict... 
+conflict...
 
 Now, I will assume the roll of PI.  Instead of waiting around for my grad
 students to finish their work, let's say that I decided to take my own stab at
@@ -189,16 +197,16 @@ recent median addition.
     Unpacking objects: 100% (2/2), done.
     From git@github.com:UW-Madison-ACI
     d063879..90fbb5e  median     -> upstream/median
-    Auto-merging stats.py	     
+    Auto-merging stats.py
     CONFLICT (content): Merge conflict in stats.py
     Automatic merge failed; fix conflicts and then commit the result.
-    
+
 ## Resolving Conflicts
 
 Now what?
 
 Git has paused the merge. You can see this with the ``git status`` command.
-    
+
     On branch median
     Your branch and 'upstream/median' have diverged,
     and have 1 and 1 different commit each, respectively.
