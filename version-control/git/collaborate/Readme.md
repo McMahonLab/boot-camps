@@ -249,35 +249,6 @@ PI's changes included.
 Let's take a look at Issues and Milestones, both of which are great project
 planning tools.
 
-## Extra Credit
-
-Repeat the median function exercise with a mode function. You might find the
-[defaultdict](http://docs.python.org/2/library/collections.html#collections.defaultdict)
-container useful -- it provides default values for key-value pairs! Here's an
-example of its use.
-
-```
-In [1]: from collections import defaultdict
-In [2]: number_frequencies = defaultdict(int)
-In [3]: number_found = 42
-In [4]: number_frequencies[number_found]
-Out[4]: 0
-In [5]: number_frequencies[number_found] += 1
-In [6]: number_frequencies[number_found]
-Out[6]: 1
-```
-
-You might also ask how to get the maximum value in a python dictionary. Here's
-one way.
-
-```
-In [6]: max_counts = max(number_frequencies, key=number_frequencies.get)
-In [7]: max_counts
-Out[7]: 42
-```
-
-It works great, right? Maybe we should add a test for bimodal distributions...
-
 # Extra Information
 
 ## gitolite
