@@ -36,7 +36,7 @@ Day 1 (Wed. June 24th, 2-4 pm in MSB 5503)
 | 3:15-3:30   | Break                                    |
 | 3:30-4:00    | [Make Incremental Changes II](version-control/git/local/Revert_and_branch.md) |
 
-Day 2 (Mon. July 6th, 2-4pm in MSB 6201)
+Day 2 (Tues. July 7th, 2-4pm in MSB 6201)
 =======
 
 | Time         | Topic                                   |
