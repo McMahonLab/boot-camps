@@ -9,7 +9,7 @@
 Narayanan, and Matt Gidden**
 
 
-### ![Exercise](pics/exercise.jpg) Exercise : A little Review...
+### ![Exercise](../../../common/pics/exercise.jpg) Exercise : A little Review...
 
 - Make a directory called 'git_rev'
 - Initialize that directory as a git repo
