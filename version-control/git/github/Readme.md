@@ -8,6 +8,16 @@
 **Based on material by Katy Huff, Anthony Scopatz, Sri Hari Krishna
 Narayanan, and Matt Gidden**
 
+
+### ![Exercise](pics/exercise.jpg) Exercise : A little Review...
+
+- Make a directory called 'git_rev'
+- Initialize that directory as a git repo
+- Make a README file, add and commit it
+- Update the README file, and look a the differences since you last committed
+- Add and commit the new changes.
+
+
 ## GitHub.com?
 
 GitHub is a site where many people store their open (and closed) source
