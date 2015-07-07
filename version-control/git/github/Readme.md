@@ -110,7 +110,7 @@ alias `origin`.
 
 Step 3 : Add a connection to the common repository :
 
-    $ git remote add upstream https://github.com/UW-Madison-ACI/simplestats
+    $ git remote add upstream https://github.com/McMahonLab/simplestats
     $ git remote -v
     origin  https://github.com/YOU/simplestats (fetch)
     origin  https://github.com/YOU/simplestats (push)
