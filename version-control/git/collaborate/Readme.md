@@ -25,31 +25,11 @@ create. Once I have, update your local copies and remotes:
     $ git checkout -b median upstream/median
     $ git push origin median
 
-### Exercise : Get set up
+## Group up
 
-**Step 1** : Group up in pairs and decide who will be "Alpha" and who will
+Group up in pairs and decide who will be "Alpha" and who will
 be "Beta" for this exercise.  
 
-**Step 2** : Each of you should add your partner's `simplestats` repository
-on GitHub as a remote and check
-to make sure you're connected.  To add your partner's repository, use the
-following command:
-
-    $ git remote add <partner> https://github.com/<partner>/simplestats
-
-where you have filled in `<partner>` with your partner's GitHub username.  
-To check that it worked, run:  
-
-    $ git remote -v
-    origin  https://github.com/<YOU>/simplestats (fetch)
-    origin  https://github.com/<YOU>/simplestats (push)
-    upstream        https://github.com/UW-Madison-ACI/simplestats (fetch)
-    upstream        https://github.com/UW-Madison-ACI/simplestats (push)
-    <partner>       https://github.com/<partner>/simplestats (fetch)
-    <partner>       https://github.com/<partner>/simplestats (push)
-    $ git fetch <partner>
-
-Again, substitute your partner's GitHub username for `<partner>`.  
 
 ## Pull Requests : Sending Your Collaborators an Update
 
