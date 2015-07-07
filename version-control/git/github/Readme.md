@@ -190,6 +190,8 @@ It is now your job to:
 * apply them to your local repository
 * apply them to your fork
 
+hint: **don't** use `git pull`
+
 ----
 
 [Up To Schedule](../../../README.md#schedule) - Back To
