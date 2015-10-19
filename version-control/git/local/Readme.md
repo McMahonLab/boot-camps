@@ -18,7 +18,7 @@ We will cover [git](http://git-scm.com) (and
 numerous graphical user interfaces for git (including
 [GitHub for Mac](https://mac.github.com/) and
 [GitHub for Windows](https://windows.github.com/)), but we will focus
-on using git from the command-line in the bash shell.
+on using git from the command-line in the bash shell. Thus, you should open a terminal window before proceeding.
 
 ## Initial setup: `git config`
 
