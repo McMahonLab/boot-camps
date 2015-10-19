@@ -1,4 +1,4 @@
-[Up To Schedule](../../../README.md) - Back To [Setup](../../../README.md)  -  - Forward to [Make Incremental Changes II](Revert_and_branch.md)
+[Up To Schedule](../../../README.md) - Back To [Setup](../../../setup/README.md)  -  - Forward to [Make Incremental Changes II](Revert_and_branch.md)
 
 ----
 
