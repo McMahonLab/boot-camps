@@ -7,7 +7,7 @@ This repository contains the course material derived from the Software
 Carpentry workshops hosted by UW-Madison's
 [Advanced Computing Initiative (ACI)](https://aci.wisc.edu).
 
-It was modified by Sarah Stevens for the purpose of teaching Git/GitHub to members of the McMahon Lab.
+It was modified by Joshua J Hamilton and Sarah Stevens for the purpose of teaching Git/GitHub to members of the McMahon Lab.
 
 Setup and Preparation
 -----------
