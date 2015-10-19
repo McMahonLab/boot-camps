@@ -67,7 +67,7 @@ The **git remote** command allows you to add, name, rename, list, and delete
 repositories such as the original one **upstream** from your fork, others that
 may be **parallel** to your fork, and so on.
 
-In the McMahon lab, all __upstream__ repositories are stored on the [McMahonLab GitHub page](https://github.com/McMahonLab). We'll be continuing our testing exercises using GitHub as the online repository,
+In the McMahon lab, all __upstream__ repositories are stored on the [McMahonLab GitHub page](https://github.com/McMahonLab). We'll be continuing our testing exercises using the McMahonLab [simplestats](https://github.com/McMahonLab/simplestats) as the upstream repository,
 so you'll need to start off by getting a copy of that repository to work on.
 
 ### Exercise : Fork Our GitHub Repository
