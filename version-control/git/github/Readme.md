@@ -18,12 +18,11 @@ Narayanan, and Matt Gidden**
 - Add and commit the new changes.
 
 
-## GitHub.com?
+## GitHub.com
 
 GitHub is a site where many people store their open (and closed) source
 code repositories. It provides tools for browsing, collaborating on and
-documenting code. Your home institution may have a repository hosting
-system of it's own. To find out, ask your system administrator.  GitHub,
+documenting code. GitHub,
 much like other forge hosting services ([launchpad](https://launchpad.net),
 [bitbucket](https://bitbucket.org), [sourceforge](http://sourceforge.net),
 etc.) provides :
@@ -38,18 +37,15 @@ etc.) provides :
 -   commit triggered mailing lists
 -   other service hooks (twitter, etc.)
 
-**NOTE** Public repos have public licenses **by default**. If you don't want
-to share (in the most liberal sense) your stuff with the world, you can make a
+**NOTE**: Repos are public **by default**. If you don't want
+to share your stuff with the world, you can make a
 private repo.  While that often costs money on Github, they now
 have [education discounts](https://github.com/blog/1775-github-goes-to-school).
 
-## GitHub password
+## GitHub Accounts
 
 Setting up GitHub requires a GitHub user name and password.  Please take a
-moment to [create a free GitHub account](https://github.com/signup/free) (if
-you want an
-[education discount](https://education.github.com/discount_requests/new) or to
-[start paying](https://github.com/pricing), you can add that to your account some other day).
+moment to [create a free GitHub account](https://github.com/signup/free). Some of the McMahonLab repos are private. You will need to keep your forks of those repos private too, so request an [educational discount](https://education.github.com/discount_requests/new) to get some free private repos. (We'll explain about forks later on in this tutorial.)
 
 ## git remote : Steps for Forking a Repository
 
@@ -71,7 +67,7 @@ The **git remote** command allows you to add, name, rename, list, and delete
 repositories such as the original one **upstream** from your fork, others that
 may be **parallel** to your fork, and so on.
 
-We'll be continuing our testing exercises using GitHub as the online repository,
+In the McMahon lab, all __upstream__ repositories are stored on the [McMahonLab GitHub page](https://github.com/McMahonLab). We'll be continuing our testing exercises using GitHub as the online repository,
 so you'll need to start off by getting a copy of that repository to work on.
 
 ### Exercise : Fork Our GitHub Repository
