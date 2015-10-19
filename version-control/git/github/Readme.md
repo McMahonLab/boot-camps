@@ -171,6 +171,8 @@ Before pushing, a developer should always pull (or fetch + merge), so
 that there is an opportunity to resolve conflicts before pushing to the
 remote.
 
+__Note__: The preferred way to push your commits to a remote repository is through a __pull request__. This will be discussed in the next section.
+
 ## Exercise: Update your remote to an upstream change
 
 Assume that your lab group collectively works on a project (like `simplestats`),
