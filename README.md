@@ -35,6 +35,7 @@ Schedule - Tues, Oct 27, 3 to 5pm in MSB 5503
 
 | Time         | Topic                                   |
 | ------------ | --------------------------------------- |
-| 3:00-4:00    | [Make Changes from Anywhere (GitHub)](version-control/git/github/Readme.md) |
-| 4:00-4:30    | [Work and Home (or Being Mobile)](version-control/git/mobility/Readme.md) |
-| 4:30-5:00    | [Collaborate](version-control/git/collaborate/Readme.md) |
+| 3:00-4:00    | [Working with GitHub](version-control/git/github/Readme.md) |
+| 4:00-5:00    | [Collaborating](version-control/git/collaborate/Readme.md) |
+
+This tutorial contains an additional [module]((version-control/git/mobility/Readme.md)) on using Git/GitHub from work and at home. Contact Josh or Sarah if you're interested.
