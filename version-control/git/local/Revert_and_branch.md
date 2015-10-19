@@ -1,4 +1,4 @@
-[Up To Schedule](../../../README.md#schedule) - Back To [Make Incremental Changes I](Readme.md)  - Forward To [Make Changes from Anywhere (Github)](../../../version-control/git/github/Readme.md)
+[Up To Schedule](../../../README.md) - Back To [Make Incremental Changes I](Readme.md)  - Forward To [Working with Github](../../../version-control/git/github/Readme.md)
 
 ----
 

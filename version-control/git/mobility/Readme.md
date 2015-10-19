@@ -1,4 +1,4 @@
-[Up To Schedule](../../../README.md#schedule) - Back To [Make Changes from Anywhere (GitHub)](../github/Readme.md) - Forward To [Collaborate](../collaborate/Readme.md)
+[Up To Schedule](../../../README.md)
 
 # Mobility: Using Version Control at Work and Home
 

@@ -1,3 +1,7 @@
+[Up To Schedule](../README.md) - Forward To [ Make Incremental Changes I](../version-control/git/local/Readme.md)
+
+----
+
 ## Setup
 
 This setup will help you install git and a text editor.  

@@ -1,8 +1,8 @@
-[Up To Schedule](../../../README.md#schedule) - Back To
+[Up To Schedule](../../../README.md) - Back To
 [Make Incremental Changes II](../local/Revert_and_branch.md) - Forward To
-[Mobility: Using Version Control at Work and Home](../mobility/Readme.md)
+[Collaborate](../collaborate/Readme.md)
 
-# Make Changes from Anywhere (Github)
+# Working with Github
 ----
 
 **Based on material by Katy Huff, Anthony Scopatz, Sri Hari Krishna
