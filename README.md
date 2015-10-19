@@ -25,9 +25,9 @@ This workshop presumes familiarity with git. If you are unfamiliar with git, ple
 ### Office Hours
 Josh will be holding office hours to provide assistance while you work through the tutorials.   
 
-| Date | Time | Location |
-| ------------ | --------------------------------------- | -- |
-| Oct 22 | 4 to 5 pm | MSB 5503 |
+| Date   | Time      | Location   |
+| -------| --------- | ---------- |
+| Oct 22 | 4 to 5 pm | MSB 5503   |
 | Oct 26 | 4 to 5 pm | EHall 3207 |
 
 Schedule - Tues, Oct 27, 3 to 5pm in MSB 5503
