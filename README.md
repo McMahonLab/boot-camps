@@ -22,8 +22,13 @@ This workshop presumes familiarity with git. If you are unfamiliar with git, ple
 | 45    | [Make Incremental Changes I](version-control/git/local/Readme.md) |
 | 45    | [Make Incremental Changes II](version-control/git/local/Revert_and_branch.md) |
 
+### Office Hours
+Josh will be holding office hours to provide assistance while you work through the tutorials.   
 
-
+| Date | Time | Location |
+| ------------ | --------------------------------------- | -- |
+| Oct 22 | 4 to 5 pm | MSB 5503 |
+| Oct 26 | 4 to 5 pm | EHall 3207 |
 
 <a name="schedule"></a>Schedule
 -----------
