@@ -223,49 +223,10 @@ PI's changes included.
     $ git commit -m "Updated from PI's commit"
     $ git push origin median
 
-## A GitHub Tour
+## Issues and Milestones
 
 Let's take a look at Issues and Milestones, both of which are great project
 planning tools.
-
-# Extra Information
-
-## gitolite
-
-[Gitolite](https://github.com/sitaramc/gitolite) is a way for you to host
-your own multi-user git repositories. I'm not going to go into details
-here, but all you need is a machine with some drive space and network
-access. You can install [minimal
-ubuntu](https://help.ubuntu.com/community/Installation/MinimalCD), then
-sudo apt-get install gitolite will pull in everything you need. At that
-point, your collaborators will only need to send you their public ssh keys
-for you to configure pull and push access to the repos.
-
-## Test your version control skills!
-
-Feel up to testing all of your skills? Check out
-[this](http://pcottle.github.com/learnGitBranching/) excellent website. We
-haven't taught you all the things you'll need to progress through the entire
-exercise, but feel free to take a look and try it out!
-
-## A little nudge
-
-Feel free to read
-[this](http://blogs.biomedcentral.com/bmcblog/2013/02/28/version-control-for-scientific-research/)
-blog post, which talks about the usefulness of version control in scientific
-work. Furthermore, how many people use Google Drive to get work done, especially
-in a collaborative mode? It turns out that the Drive app [includes version
-control](http://support.google.com/drive/bin/answer.py?hl=en&answer=190843) as
-one of its features, albeit in a limited mode (you can't really control how
-often it commits, nor can you give messages to your commits). Here's an
-[example](https://docs.google.com/document/d/115sweom_AnEdTvDjipsSK6Ml1HMnIKuQwz2ys52A2Bo/edit?usp=sharing).
-
-## Why should you share your code with the world?
-
-Take the time to do a little [background
-reading](http://www.siam.org/news/news.php?id=2064&goback=.gde_112393_member_232769759).
-There are arguments for and against sharing your code. Why would you,
-personally, choose to do so or not?
 
 ----
 
