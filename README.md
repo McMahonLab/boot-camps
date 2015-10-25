@@ -28,9 +28,9 @@ Josh will be holding office hours to provide assistance while you work through t
 | Date   | Time      | Location   |
 | -------| --------- | ---------- |
 | Oct 22 | 4 to 5 pm | MSB 5503   |
-| Oct 26 | 4 to 5 pm | EHall 3207 |
+| Oct 26 | 4:30 to 5:30 pm | EHall 3207 |
 
-Schedule - Tues, Oct 27, 3 to 5pm in MSB 5503
+Schedule - Tues, Oct 27, 3 to 5pm in MSB 55
 -----------
 
 | Time         | Topic                                   |
