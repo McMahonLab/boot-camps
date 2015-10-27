@@ -152,7 +152,7 @@ If you are satisfied with the changes, the final step is to merge the `upstream`
 
 ```
 $ git checkout master
-$ git merge upstream
+$ git merge upstream/master
 ```
 
 ## git pull : Pull = Fetch + Merge
@@ -164,7 +164,7 @@ than fetching and merging as it automates the branch matching.
 Specifically, to perform the same task as we did in the previous
 exercise, the pull command would be :
 
-    $ git pull origin
+    $ git pull upstream master
     Already up-to-date.
 
 When there have been remote changes, the pull will apply those changes

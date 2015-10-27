@@ -25,6 +25,7 @@ function. Like good SWC followers, we'll be working in a branch, called
 `median`, which I will now create. Once I have, update your local copies and
 remotes:
 
+    $ git fetch upstream median
     $ git checkout -b median upstream/median
     $ git push origin median
 
