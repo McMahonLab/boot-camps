@@ -146,6 +146,14 @@ To explore the actual changes:
 
     $ git diff upstream/master
 
+## git merge:
+
+If you are satisfied with the changes, the final step is to merge the `upstream` repo into your local copy of the `master` branch:
+
+```
+$ git checkout master
+$ git merge upstream
+```
 
 ## git pull : Pull = Fetch + Merge
 

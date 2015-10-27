@@ -16,11 +16,14 @@ Let's start off by relocating back to the original simplestats repository.
 
     $ cd ~/simplestats
 
-To put this in more realistic terms, imagine that the upstream repository
-(McMahonLab) is managed by your PI and the alpha and beta forks are students
-working on a project, tasked with implementing some stats functions. Like good
-SWC followers, we'll be working in a branch, called `median`, which I will now
-create. Once I have, update your local copies and remotes:
+In our lab, all projects have an upstream repository which serves to coordinate
+the efforts of everyone working on the project. Individual lab members have
+their own forks which they periodically incorporate into the upstream repo.
+
+In today's tutorial, alpha and beta will both be working to implement a stats
+function. Like good SWC followers, we'll be working in a branch, called
+`median`, which I will now create. Once I have, update your local copies and
+remotes:
 
     $ git checkout -b median upstream/median
     $ git push origin median
@@ -43,14 +46,15 @@ discuss potential modifications, and even push follow-up commits if necessary.
 ### Exercise : Issue a Pull Request and Review it
 
 In this exercise, "Beta" will be making changes and submitting a pull request
-to Alpha's repository, and "Alpha" will be reviewing the pull request and merging
-it into their own remote (and then local) repository.  In the following instructions
-Beta will be performing Steps 1-4 (while Alpha waits and observes), and then
-Alpha will continue with Steps 5-7 (while Beta observes).  
+to the upstream repository, and "Alpha" will be reviewing the pull request and
+merging it into the upstream repository, and then their own local (and remote)
+repositories. In the following instructions Beta will be performing Steps 1-4
+(while Alpha waits and observes), and then Alpha will continue with Steps 5-7
+(while Beta observes).  
 
 #### For Beta (submitting the pull request)
 
-**Step 1** : Modify the stats.py module to add the median function (shown below).
+**Step 1** : Create a stats_alpha_beta.py module to add the median function (shown below), where alpha and beta are the initials of the participants.
 
 ```python
 def median(vals):
@@ -70,11 +74,11 @@ def median(vals):
 
     $ git push origin median
 
-**Step 4** : Issue a Pull Request to Alpha's `median` branch
+**Step 4** : Issue a Pull Request to the upstream `median` branch
 
   - Go to your remote's page (github.com/beta/simplestats)
   - Click Pull Requests (on the right menu) -> New Pull Request -> Edit
-  - choose the base fork as **alpha/simplestats**, the base branch as **median**, the
+  - choose the base fork as **McMahonLab/simplestats**, the base branch as **median**, the
     head fork as **beta/simplestats**, and the compare branch as **median**
   - write a descriptive message and send it off.
 
@@ -82,18 +86,23 @@ def median(vals):
 
 **Step 5** : Review the pull request
 
+  - Go to the upstream page (https://github.com/McMahonLab/simplestats)
+  - Click Pull Requests (on the right menu
+  - Click on beta's pull request
+
   - Is the code clear? Does it need comments? Is it correct? Does something
     need clarifying? Feel free to provide in-line comments. Beta can always
     update their version of commits during a pull request.
 
 **Step 6** : Merge the pull request using the merge button
 
-**Step 7** : Update your local repository.  At this point, all the changes exist
-**only** on the remote repository.
+**Step 7** : Update your local and remote repositories.  At this point, all the changes exist
+**only** on the upstream repository.
 
     $ git checkout median
     $ git fetch origin
-    $ git merge origin/median
+    $ git merge upstream/median
+    $ git push origin median
 
 ### Exercise : Swap Roles
 
@@ -105,7 +114,7 @@ until they finish, then follow steps 5-7.
 
 ####For Alpha (submitting the pull request):
 
-**Step 1** : Modify the stats.py median function to so the code is the following.
+**Step 1** : Modify the stats_alpha_beta.py median function so the code is the following.
 
 ```python
 def median(vals):
@@ -131,7 +140,7 @@ def median(vals):
 
   - Go to your remote's page (github.com/alpha/simplestats)
   - Click Pull Requests (on the right menu) -> New Pull Request -> Edit
-  - choose the base fork as **beta/simplestats**, the base as **median**, the
+  - choose the base fork as **McMahonLab/simplestats**, the base as **median**, the
     head fork as **alpha/simplestats**, and the compare as **median**
   - write a descriptive message and send it off.
 
@@ -139,31 +148,37 @@ def median(vals):
 
 **Step 5** : Review the pull request
 
+  - Go to the upstream page (https://github.com/McMahonLab/simplestats)
+  - Click Pull Requests (on the right menu
+  - Click on alpha's pull request
+
   - Is the code clear? Does it need comments? Is it correct? Does something
     need clarifying? Feel free to provide in-line comments. Alpha can always
     update their version of commits during a pull request.
 
 **Step 6** : Merge the pull request using the merge button
 
-**Step 7** : Update your local repository
+**Step 7** : Update your local and remote repositories.  At this point, all the changes exist
+**only** on the upstream repository.
 
     $ git checkout median
     $ git fetch origin
-    $ git merge origin/median
+    $ git merge upstream/median
+    $ git push origin median
 
 ## git merge : Conflicts
 
 This is the trickiest part of version control, so let's take it very carefully.
 
 Alpha and Beta have made changes to that file in sync with each other. What
-happens if the PI (upstream) also makes changes on the same lines? A dreaded
-conflict...
+happens if someone else makes changes on the same lines? A dreaded conflict...
 
-Now, I will assume the roll of PI.  Instead of waiting around for my grad
+Now, I will assume the role of PI.  Instead of waiting around for my grad
 students to finish their work, let's say that I decided to take my own stab at
-the median function (implemented poorly..). I'll add something to stats.py and
+the median function. I'll add something to stats_alpha_beta.py and
 push it to the upstream repository. Sadly, this addition overlaps with your
-recent median addition.
+recent median addition. **Note**: If all of the pairs had created a `stats.py`
+file, conflicts would also have appeared.
 
 ### Exercise : Experience a Conflict
 
@@ -176,8 +191,8 @@ recent median addition.
     Unpacking objects: 100% (2/2), done.
     From git@github.com:UW-Madison-ACI
     d063879..90fbb5e  median     -> upstream/median
-    Auto-merging stats.py
-    CONFLICT (content): Merge conflict in stats.py
+    Auto-merging stats_alpha_beta.py
+    CONFLICT (content): Merge conflict in stats_alpha_beta.py
     Automatic merge failed; fix conflicts and then commit the result.
 
 ## Resolving Conflicts
@@ -197,12 +212,12 @@ Git has paused the merge. You can see this with the ``git status`` command.
     Unmerged paths:
     (use "git add <file>..." to mark resolution)
 
-    both modified:      stats.py
+    both modified:      stats_alpha_beta.py
 
-If you open your stats.py file, you'll notice that git has added some strange
+If you open your stats_alpha_beta.py file, you'll notice that git has added some strange
 characters to it. Specifically, you'll see something like:
 
-    <<<<<<< HEAD:stats.py
+    <<<<<<< HEAD:stats_alpha_beta.py
     ** your version of the code **
     =======
     ** upstream's version of the code **
@@ -213,13 +228,13 @@ means you should replace the PI's ```median``` function with yours.
 
 ### Exercise : Resolve a Conflict
 
-**Step 1** : Resolve the conflict by editing your stats.py file. It should
+**Step 1** : Resolve the conflict by editing your stats_alpha_beta.py file. It should
 run as expected and should look exactly like your version, but with the
 PI's changes included.
 
 **Step 2** : Add the updated version and commit
 
-    $ git add stats.py
+    $ git add stats_alpha_beta.py
     $ git commit -m "Updated from PI's commit"
     $ git push origin median
 
