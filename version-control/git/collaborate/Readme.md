@@ -78,7 +78,7 @@ def median(vals):
 
   - Go to your remote's page (github.com/beta/simplestats)
   - Click Pull Requests (on the right menu) -> New Pull Request -> Edit
-  - choose the base fork as **upstream/simplestats**, the base branch as **median**, the
+  - choose the base fork as **McMahonLab/simplestats**, the base branch as **median**, the
     head fork as **beta/simplestats**, and the compare branch as **median**
   - write a descriptive message and send it off.
 
@@ -101,7 +101,7 @@ def median(vals):
 
     $ git checkout median
     $ git fetch origin
-    $ git merge upstrem/median
+    $ git merge upstream/median
     $ git push origin median
 
 ### Exercise : Swap Roles
@@ -140,7 +140,7 @@ def median(vals):
 
   - Go to your remote's page (github.com/alpha/simplestats)
   - Click Pull Requests (on the right menu) -> New Pull Request -> Edit
-  - choose the base fork as **upstream/simplestats**, the base as **median**, the
+  - choose the base fork as **McMahonLab/simplestats**, the base as **median**, the
     head fork as **alpha/simplestats**, and the compare as **median**
   - write a descriptive message and send it off.
 
@@ -163,7 +163,7 @@ def median(vals):
 
     $ git checkout median
     $ git fetch origin
-    $ git merge upstrem/median
+    $ git merge upstream/median
     $ git push origin median
 
 ## git merge : Conflicts
